@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@600&family=Poppins&display=swap');
+:root{
+    --lemon_yellow : #f6feaa;
+    --tea_green : #c7dfc5;
+    --buff : #fce694;
+    --jet : #373737;
+    --columbia_blue : #c1dbe3;
+    --yellow : #f9ca24;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, a {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    color: var(--jet);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    color: var(--jet);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    display: grid;
+    height: 100%;
+}
+
+body{
+    background : #B6E2D3;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background : var(--jet);
+}
+
+html::-webkit-scrollbar-thumb{
+    background : var(--tea_green);
+}
+
+header{
+    position : fixed;
+    top : 0; right : 0;
+    z-index : 1000;
+    height : 100%;
+    width: 35rem;
+    background : #EF7C8E;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height : 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid #B6E2D3;
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+header .user .post {
+    font-size: 2rem;
+    color: #eee;
+    padding-bottom: 2rem;
+}
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: var(--columbia_blue);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    color: #255784;
+    background: #FAE8E0;
+    box-shadow: 0 0 10px #D8A7B1, 0 0 40px #D8A7B1, 0 0 80px #D8A7B1;
+    transition-delay: 0.15s;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.skillbar {
+    width: 600px;
+    background: #fff;
+    border-radius:10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skillbar .bar {
+    margin: 20px 0;
+}
+
+.skillbar .bar:first-child{
+    margin-top: 0px;
+}
+
+.skillbar .bar .info{
+    margin-bottom: 5px;
+}
+
+.skillbar .bar .info span{
+    font-size: 17px;
+    font-weight:500;
+}
+
+.skillbar .bar .progressline{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(255, 255, 255, 0.8) ;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progressline span{
+    height: 100%;
+    width: 80%;
+    background: #B6E2D3;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.progressline.webdev span {
+    width: 90%;
+}
+.progressline.investment span {
+    width: 75%;
+}
+.progressline.swiftui span {
+    width: 80%;
+}
+.progressline.crypto span {
+    width: 40%;
+}
+.progressline.studying span {
+    width: 89%;
+}
+.bar .progressline span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.bar .progressline span::after {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.progressline.webdev span::after {
+    content: "90%";
+}
+.progressline.investment span::after {
+    content: "75%";
+}
+.progressline.swiftui span::after {
+    content: "80%";
+}
+.progressline.crypto span::after {
+    content: "40%";
+}
+.progressline.studying span::after {
+    content: "89%";
+}
+
+.btn{
+    margin-top: 10px;
+    padding:.7rem 3rem;
+    background:var(--columbia_blue);
+    color:#fff;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 5rem;
+    width: 30rem;
+    justify-content: center;
+    align-items : center;
+}
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    background:var(--tea_green);
+}
