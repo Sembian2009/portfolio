@@ -1,19 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="./login/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./portfolio.css">
 </head>
 
 <body>
-    <form class="box" action="../portfolio/portfolio/aboutme.html" method="post">
-        <h1>Login</h1>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
-        <input type="submit" name="Login" placeholder="Login">
-    </form>
+    <!--Header Starts-->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./portfolio/aboutme.html">home</a></li>
+                <li><a href="./portfolio/projects.html">projects</a></li>
+                <li><a href="./portfolio/skills.html">skills</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <h3 class="name">Sembian Cailassame</h3>
+            <p class="post">Student | Web Developer | Allenite</p>
+            <img src="../images/sembian.jpeg" alt="I'm just like Obito">
+            <p class="post">+91 8778749641</p>
+            <p class="post">cnsembian@gmail.com</p>
+        </div>
+    </header>
+    <!--Header Ends-->
+    <!--Home Starts-->
+    <section class="home" id="home">
+        <h3>Hi, I'm Sembian Cailassame</h3>
+        <p>I'm a student web developer from Pondicherry, India. I'm currently 13 years old and I love to program!
+            <br>I have been programming for the past 4 years and you can reach out to me if you want any help 😊
+        </p>
+        <a href="./portfolio/skills.html"><button class="btn">Skills <i class="fas fa-code"></i></button></a>
+        <div class="wrapper">
+            <div class="statictext">I'm a</div>
+            <ul class="dynamictext">
+                <li><span>Developer</span></li>
+                <li><span>Student</span></li>
+                <li><span>Teenager</span></li>
+                <li><span>Freelancer</span></li>
+            </ul>
+        </div>
+    </section>
+    <!--Home Ends-->
 </body>
 
 </html>
