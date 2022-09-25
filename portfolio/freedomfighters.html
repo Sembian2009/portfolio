@@ -1,1 +1,109 @@
-this is yet to be done
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>freedom fighters</title>
+  <style>
+    .maincontainer{
+          position : relative;
+          width : 250px;
+    height : 320px;}
+    
+    .thecard{
+      position : absolute;
+    width : 100%;
+    height : 100%;
+    transform-style : preserve-3d;
+    transition : all 0.5s ease;}
+    
+    .thefront {
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    backface-visibility : hidden;
+   background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Mohammed_Barkatullah.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 350px;
+    color : #333;
+    text-align : center;
+    font-family : 'zilla slab', sans-serif;
+    border-radius : 20px;
+    font-size : 20px;
+    font-weight : bold;}
+    
+    .theback {
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    backface-visibility : hidden;
+    background : #e0e0eb;
+    color : #333;
+    transform : rotateY(180deg);
+     text-align : center;
+    font-family : 'zilla slab', sans-serif;
+    border-radius : 30px;
+    font-size : 10px;
+    font-weight : bold;}
+    
+    .thecard:hover{
+    transform: rotateY(180deg);}
+    
+    li.mohammed a, li.mohammed a:link:hover, li.mohammed a:visited, li.mohammed a:visited:hover {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    display: block;
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #669778;
+    text-align : center;
+    justify-content : center;
+    margin : 10px;
+    text-decoration : none;
+}
+    ul.barkatullah {
+    list-style: none;
+     width:100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding : 10px;
+    text-align : center;
+    justify-content : center;
+    text-decoration : none;}
+    
+    li.mohammed a p{
+     font-family : 'zilla slab', sans-serif;
+    color : #000;
+    text-align : center;
+    font-size : 13px;
+    text-decoration : none;
+ }
+    
+  </style>
+</head>
+  <body>
+    <div class = "maincontainer">
+    <div class = "thecard">
+      <div class = "thefront">
+      </div>
+      <div class = "theback">
+        <h1>(1854 - 1927)</h1>
+        <br>
+          Barkatullah was born on 7th july 1854 at Itwara Mohalla at Bhopal. He fought from outside india with fiery speeches and revolutionary writings in leading newspapers for the independence of India. He had sympathy for Pan Islamic Movement. He was the first prime minister of India(Provisional).
+          <ul class="barkatullah">
+<li class="mohammed"><a href="https://en.wikipedia.org/wiki/Mohamed_Barakatullah_Bhopali"> <p>Wikipedia</p></a></li>
+<li class="mohammed"><a href="https://thelogicalindian.com/history/mohammad-barkatullah-bhopal-35314"><p>The logical Indian</p></a></li>
+<li class="mohammed"><a href="https://www.heritagetimes.in/barkatullah-bhopali-who-formed-the-government-of-india-in-exile-with-raja-mahendra-pratap-as-its-president-and-himself-as-the-prime-minister/"><p>Heritage Times</p></a></li>
+</ul>
+          </div>
+    </div>
+    </div>
+  </body>
+
+</html>
